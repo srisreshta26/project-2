@@ -9,3 +9,8 @@ __pycache__/
 
 # Virtual environments
 .venv/
+
+# Test and development files
+.pytest_cache/
+.DS_Store
+.streamlit/secrets.toml
