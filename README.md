@@ -177,3 +177,26 @@ The application is built using Streamlit and provides:
 - Expand the training dataset.
 - Explore more advanced NLP techniques.
 - Improve the user interface and visualisations.
+## 🧪 Testing
+
+Signal includes automated tests using **pytest**.
+
+The test suite checks:
+- Successful dataset loading and validation.
+- Successful training of both machine learning models.
+- Model prediction functionality.
+- Valid prediction labels and output lengths.
+
+### Running Tests
+
+```bash
+python -m pytest -v
+```
+
+### Latest Test Results
+
+- Total tests: 2
+- Passed: 2
+- Failed: 0
+
+All automated tests passed successfully.
