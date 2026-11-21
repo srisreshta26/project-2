@@ -87,3 +87,10 @@ To demonstrate how Machine Learning and NLP can be used to identify spam message
 ---
 
 **Developed as an AI/ML portfolio project.**
+## 📸 Screenshots
+
+### Home Page
+![Signal Home Page](screenshots/signal-home.png)
+
+### Spam Detection Result
+![Signal Prediction](screenshots/signal-prediction.png)
