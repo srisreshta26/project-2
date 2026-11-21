@@ -94,3 +94,86 @@ To demonstrate how Machine Learning and NLP can be used to identify spam message
 
 ### Spam Detection Result
 ![Signal Prediction](screenshots/signal-prediction.png)
+## ⚙️ Technical Implementation
+
+### 1. Dataset
+
+Signal uses the **SMS Spam Collection Dataset** from the UCI Machine Learning Repository.
+
+The dataset contains SMS messages labelled as:
+- `ham` – Normal messages
+- `spam` – Unwanted or promotional messages
+
+The dataset is downloaded automatically if it is not already available locally.
+
+### 2. Data Preprocessing
+
+The data preparation pipeline performs:
+- Missing value removal
+- Label standardisation
+- Removal of invalid labels
+- Empty message removal
+- Dataset validation
+
+### 3. Feature Extraction
+
+**TF-IDF (Term Frequency–Inverse Document Frequency)** converts text messages into numerical features that machine learning models can understand.
+
+Configuration:
+- Lowercase text conversion
+- Unicode accent stripping
+- Unigrams and bigrams
+- Maximum of 30,000 features
+- Sublinear term frequency scaling
+
+### 4. Machine Learning Algorithms
+
+Signal trains and compares two classification algorithms:
+
+**Multinomial Naive Bayes**
+- A probabilistic classification algorithm.
+- Commonly used for text classification.
+
+**Logistic Regression**
+- A supervised classification algorithm.
+- Uses balanced class weights to account for class imbalance.
+
+### 5. Model Training and Evaluation
+
+The dataset is divided into:
+- 80% training data
+- 20% testing data
+
+Stratified splitting is used to preserve class proportions.
+
+Models are evaluated using:
+- Accuracy
+- Balanced Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- Classification Report
+
+### 6. Application
+
+The application is built using Streamlit and provides:
+- Interactive model selection
+- SMS message classification
+- Model performance comparison
+- Confusion matrix visualisation
+- Classification report display
+
+### 7. Limitations
+
+- Predictions may not always be correct.
+- The models are trained on a specific SMS dataset.
+- A normal classification does not guarantee that a message is safe.
+
+## 🚀 Future Improvements
+
+- Explore additional machine learning algorithms.
+- Improve model performance through hyperparameter tuning.
+- Expand the training dataset.
+- Explore more advanced NLP techniques.
+- Improve the user interface and visualisations.
